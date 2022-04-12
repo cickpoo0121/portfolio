@@ -96,13 +96,13 @@ export default function Detail(props) {
           <h4>Work Experience</h4>
           <ul>
             {expreience.map((project, index) => (
-              <div className="mb-3">
+              <div key={`project${index}`} className="mb-3">
                 <strong className="text-primary">{project.projectName}</strong>
                 <span className="text-primary"> | {project.duration} </span>
                 <div>
                   <strong>{`Role: ${project.role}`}</strong>
                 </div>
-                <ul key={`project${index}`}>
+                <ul>
                   {project.tasks.map((task, index) => (
                     <li key={index}>{task}</li>
                   ))}

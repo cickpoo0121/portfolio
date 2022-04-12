@@ -11,11 +11,11 @@ export default function Interests() {
       <h2 className="topic-title my-3 mb-3">Interests</h2>
 
       <div className="row">
-        {interests.map((interest) => (
-          <div className="col-md-4">
+        {interests.map((interest, index) => (
+          <div key={index} className="col-md-4">
             <div className="card">
-              <div class="card-body">
-                <h5 class="card-title text-center">{interest.title}</h5>
+              <div className="card-body">
+                <h5 className="card-title text-center">{interest.title}</h5>
                 {/* <p class="card-text">
                   This card has supporting text below as a natural lead-in to
                   additional content.
@@ -25,7 +25,7 @@ export default function Interests() {
                 </p> */}
               </div>
               <img
-                class="card-img-top"
+                className="card-img-top"
                 src={`/images/${interest.img}`}
                 alt="Card image cap"
                 style={{ maxHeight: "550px" }}
