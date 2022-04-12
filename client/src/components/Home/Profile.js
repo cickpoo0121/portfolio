@@ -51,7 +51,7 @@ export default function Profile() {
               <strong>Education:</strong>
               <span> Mae Fah Luang University | Graduated in 2022</span>
             </div>
-            <dvi>
+            <div>
               <button
                 type="button"
                 className="btn btn-primary"
@@ -59,7 +59,7 @@ export default function Profile() {
               >
                 Get Resume
               </button>
-            </dvi>
+            </div>
           </div>
         </div>
         <div className="col-md-4 mx-auto my-auto">
