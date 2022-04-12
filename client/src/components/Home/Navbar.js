@@ -7,11 +7,11 @@ export default function Navbar() {
     <nav
       id="navbar-example2"
       className="container navbar navbar-light"
-      style={{ backgroundColor: false ? "#e3f2fd" : "#ffffff" }}
+      style={{ backgroundColor: "#ffffff" }}
     >
       <a className="navbar-brand" href="/">
         <h1>{"chumphon aekwarodom".toUpperCase()}</h1>
-        <div>Eamil: chumphon.aekwarodom@gmail.com</div>
+        <div>Email: chumphon.aekwarodom@gmail.com</div>
         {/* <div>Phone: 0871563385</div> */}
       </a>
       <ul className="nav nav-pills">
