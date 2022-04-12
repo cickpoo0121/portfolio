@@ -1,8 +1,11 @@
 import React from "react";
 import Typical from "react-typical";
-import { Button, Image } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 
 export default function Profile() {
+  function handelGetResume() {
+    window.open("/images/resume.pdf");
+  }
   return (
     <div className="card profile-detials">
       <div className="row no-gutters my-5 " style={{ maxWidth: "100%" }}>
@@ -44,10 +47,19 @@ export default function Profile() {
                 <div className="col-1"></div>
               </div>
             </div>
-            <div className="text-primary mt-5">
+            <div className="text-primary mt-5 mb-3">
               <strong>Education:</strong>
               <span> Mae Fah Luang University | Graduated in 2022</span>
             </div>
+            <dvi>
+              <button
+                type="button"
+                className="btn btn-primary"
+                onClick={handelGetResume}
+              >
+                Get Resume
+              </button>
+            </dvi>
           </div>
         </div>
         <div className="col-md-4 mx-auto my-auto">
