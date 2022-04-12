@@ -20,11 +20,11 @@ export default function Profile() {
                   <Typical
                     loop={Infinity}
                     steps={[
-                      "Full Stack Developer",
+                      "Full-stack Developer",
                       1000,
-                      "Back end Developer",
+                      "Back-end Developer",
                       1000,
-                      "Font end Developer",
+                      "Front-end Developer",
                       1000,
                     ]}
                   />
@@ -38,26 +38,29 @@ export default function Profile() {
                 love to learn new technologies. I am a fourth-year student in
                 the major of Computer Science and Innovation from Mae Fah Luang
                 University. I am looking for an position in a full-stack
-                developer position or back-end developer. I wish to apply my experience and knowledge
-                to make the organization that I work with grows bigger and
-                stronger.
+                developer position or back-end developer. I wish to apply my
+                experience and knowledge to make any organization that I am
+                going to work with grows bigger and stronger.
                 <div className="col-1"></div>
               </div>
             </div>
             <div className="text-primary mt-5">
               <strong>Education:</strong>
-              <span> Mae Fah Luang University | Graduate in 2022</span>
+              <span> Mae Fah Luang University | Graduated in 2022</span>
             </div>
           </div>
         </div>
-        <div className="col-md-4 ml-auto mr-auto">
+        <div className="col-md-4 mx-auto my-auto">
           <Image
-            src="/images/logo512.png"
-            className="rounded-circle card-img "
+            src="/images/TeE.jpg"
+            className=" card-img "
             style={{
               backgroundColor: "black",
-              maxWidth: "100%",
-              height: "auto",
+              maxWidth: "80%",
+              height: "80%",
+              borderRadius: "100%",
+              // width: "300px",
+              // height: "300px",
             }}
             alt="..."
           />

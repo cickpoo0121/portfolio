@@ -46,7 +46,7 @@ export default function Resume() {
                   >
                     <label>
                       <i className="bi bi-file-earmark-spreadsheet-fill  pe-4"></i>
-                      Wrok Experience
+                      Work Experience
                     </label>
                   </a>
                 </li>

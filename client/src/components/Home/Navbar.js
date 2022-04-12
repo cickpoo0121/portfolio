@@ -10,7 +10,9 @@ export default function Navbar() {
       style={{ backgroundColor: false ? "#e3f2fd" : "#ffffff" }}
     >
       <a className="navbar-brand" href="/">
-        <h1>{"Portfolio".toUpperCase()}</h1>
+        <h1>{"chumphon aekwarodom".toUpperCase()}</h1>
+        <div>Eamil: chumphon.aekwarodom@gmail.com</div>
+        {/* <div>Phone: 0871563385</div> */}
       </a>
       <ul className="nav nav-pills">
         <li className="nav-item">
@@ -39,7 +41,7 @@ export default function Navbar() {
             <span>Experience</span>
           </a>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <a
             href="#contactMe-content"
             className={
@@ -50,6 +52,19 @@ export default function Navbar() {
             onClick={() => setactive("navContact")}
           >
             <span>Contact me</span>
+          </a>
+        </li> */}
+        <li className="nav-item">
+          <a
+            href="#interests-content"
+            className={
+              active === "navContact"
+                ? "nav-link font-weight-bold text-primary h5"
+                : "nav-link"
+            }
+            onClick={() => setactive("navContact")}
+          >
+            <span>Interests</span>
           </a>
         </li>
       </ul>

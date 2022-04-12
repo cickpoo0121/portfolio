@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export default function ContractMe() {
-  const [validated, setValidated] = useState(false);
+  //   const [validated, setValidated] = useState(false);
 
   const handleSubmit = (event) => {
     // const form = event.currentTarget;
@@ -15,6 +15,21 @@ export default function ContractMe() {
     event.preventDefault();
   };
 
+  function coppyEmail() {
+    /* Get the text field */
+    var copyText = document.getElementById("myEmail");
+
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+    /* Copy the text inside the text field */
+    navigator.clipboard.writeText(copyText.value);
+
+    /* Alert the copied text */
+    alert("Copied the email: " + copyText.value);
+  }
+
   return (
     <div className="topic-title my-3 ">
       <h2 className="mb-3">Contact Me</h2>
@@ -26,6 +41,31 @@ export default function ContractMe() {
               If you’d like to chat about a project or just have question,
               please fill in the form below. I aim to get back within 2 days.
             </span>
+
+            <div className="mt-5 col-5">
+              <label>This is my email</label>
+              <div className="input-group">
+                <input
+                  id="myEmail"
+                  type="text"
+                  className="form-control"
+                  placeholder="Input group example"
+                  aria-label="Input group example"
+                  aria-describedby="btnGroupAddon2"
+                  value={"chumphon.aekwarodom@gmail.com"}
+                  disabled
+                ></input>
+                <div className="input-group-prepend">
+                  <button
+                    className="input-group-text"
+                    id="btnGroupAddon2"
+                    onClick={coppyEmail}
+                  >
+                    <i className="bi bi-clipboard-check"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
 
             <form className="my-5" onSubmit={handleSubmit}>
               <div className="row">

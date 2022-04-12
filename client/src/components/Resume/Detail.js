@@ -7,8 +7,8 @@ export default function Detail(props) {
       duration: "2020 - present",
       tasks: [
         "Gathered requirements from client",
-        "Design database (Analyze and review requirements to design database)",
-        "Develop back-end (Create API services and funtions )",
+        "Designed database (Analyze and review requirements to Designed database)",
+        "Developed back-end (Create API services and funtions )",
       ],
       role: "back-end developer",
       platform: "web application",
@@ -18,10 +18,10 @@ export default function Detail(props) {
       projectName: "ElderEat (my senior project)",
       duration: "2021",
       tasks: [
-        "Design database (Design database)",
-        "Design UX/UI",
-        "Develop front-end",
-        "Develop back-end (Create API services and funtions )",
+        "Designed database (Designed database)",
+        "Designed UX/UI",
+        "Developed front-end",
+        "Developed back-end (Create API services and funtions )",
         "Line Notify (Create a LINE notification API function)",
         "Training Model (Training a model with image classification)",
       ],
@@ -32,7 +32,7 @@ export default function Detail(props) {
     {
       projectName: "Treasury of Thailand",
       duration: "2021",
-      tasks: ["Develop front-end (Develop form)"],
+      tasks: ["Developed front-end (Developed form)"],
       role: "front-end developer",
       platform: "mobile application",
     },
@@ -42,9 +42,9 @@ export default function Detail(props) {
       duration: "2021",
       tasks: [
         "Gathered requirements from client ",
-        "Design database (Design database)",
-        "Develop front-end (Create web pages)",
-        "Develop back-end (Create API services and funtions )",
+        "Designed database (Designed database)",
+        "Developed front-end (Create web pages)",
+        "Developed back-end (Create API services and funtions )",
         "Mobile application (Fixed bugs and integrated front-end to back-end)",
       ],
       role: "full-stack developer",
@@ -118,8 +118,12 @@ export default function Detail(props) {
         <div id="skills">
           <h4>Programming Skills</h4>
           <ul>
-            {skills.map((skill) => (
-              <li className="text-primary " style={{ fontSize: "18px" }}>
+            {skills.map((skill, index) => (
+              <li
+                key={`skill${index}`}
+                className="text-primary"
+                style={{ fontSize: "18px" }}
+              >
                 {skill}
               </li>
             ))}
