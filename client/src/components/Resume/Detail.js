@@ -3,6 +3,14 @@ import React from "react";
 export default function Detail(props) {
   var expreience = [
     {
+      projectName: "Accenture Internship Trainee",
+      duration: "present",
+      tasks: [],
+      role: "Back-end Developer",
+      platform: "web application",
+    },
+
+    {
       projectName: "Submit Senior Project",
       duration: "2020 - present",
       tasks: [
@@ -10,7 +18,7 @@ export default function Detail(props) {
         "Designed database (Analyze and review requirements to Designed database)",
         "Developed back-end (Create API services and funtions )",
       ],
-      role: "back-end developer",
+      role: "Back-end Developer",
       platform: "web application",
     },
 
@@ -25,7 +33,7 @@ export default function Detail(props) {
         "Line Notify (Create a LINE notification API function)",
         "Training Model (Training a model with image classification)",
       ],
-      role: "full-stack developer",
+      role: "Full-stack Developer",
       platform: "mobile application",
     },
 
@@ -33,7 +41,7 @@ export default function Detail(props) {
       projectName: "Treasury of Thailand",
       duration: "2021",
       tasks: ["Developed front-end (Developed form)"],
-      role: "front-end developer",
+      role: "Front-end Developer",
       platform: "mobile application",
     },
 
@@ -47,7 +55,7 @@ export default function Detail(props) {
         "Developed back-end (Create API services and funtions )",
         "Mobile application (Fixed bugs and integrated front-end to back-end)",
       ],
-      role: "full-stack developer",
+      role: "Full-stack Developer",
       platform: "web application",
     },
   ];

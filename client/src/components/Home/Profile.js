@@ -8,7 +8,7 @@ export default function Profile() {
   }
   return (
     <div className="card profile-detials">
-      <div className="row no-gutters my-5 " style={{ maxWidth: "100%" }}>
+      <div className="row no-gutters my-5 ">
         <div className="col-md-8">
           <div className="card-body text-center">
             <h4 className="text-dark">
@@ -24,11 +24,11 @@ export default function Profile() {
                     loop={Infinity}
                     steps={[
                       "Full-stack Developer",
-                      1000,
+                      1500,
                       "Back-end Developer",
-                      1000,
+                      1500,
                       "Front-end Developer",
-                      1000,
+                      1500,
                     ]}
                   />
                 </h1>
@@ -62,7 +62,7 @@ export default function Profile() {
             </div>
           </div>
         </div>
-        <div className="col-md-4 mx-auto my-auto">
+        <div className="col-md-4 mx-auto my-auto text-center">
           <Image
             src="/images/TeE.jpg"
             className=" card-img "

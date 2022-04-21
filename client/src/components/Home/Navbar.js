@@ -10,8 +10,12 @@ export default function Navbar() {
       style={{ backgroundColor: "#ffffff" }}
     >
       <a className="navbar-brand" href="/">
-        <h1>{"chumphon aekwarodom".toUpperCase()}</h1>
-        <div>Email: chumphon.aekwarodom@gmail.com</div>
+        <strong style={{ fontSize: "clamp(1rem, 2vw, 5rem)" }}>
+          {"chumphon aekwarodom".toUpperCase()}
+        </strong>
+        <div style={{ fontSize: "clamp(1rem, 1vw, 3rem)" }}>
+          Email: chumphon.aekwarodom@gmail.com
+        </div>
         {/* <div>Phone: 0871563385</div> */}
       </a>
       <ul className="nav nav-pills">

@@ -12,7 +12,7 @@ export default function Interests() {
 
       <div className="row">
         {interests.map((interest, index) => (
-          <div key={index} className="col-md-4">
+          <div key={index} className="col-md-4 my-2">
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title text-center">{interest.title}</h5>
