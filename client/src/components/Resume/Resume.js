@@ -61,8 +61,7 @@ export default function Resume() {
                     onClick={() => setactive("skills")}
                   >
                     <label>
-                      <i className="bi bi-terminal-fill pe-4"></i> Programming
-                      Skills
+                      <i className="bi bi-terminal-fill pe-4"></i>Skills and expertise
                     </label>
                   </a>
                 </li>

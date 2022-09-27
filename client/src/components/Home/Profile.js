@@ -37,13 +37,13 @@ export default function Profile() {
             <div className="row ">
               <div className="col-1"></div>
               <div className="col-10 text-justify">
-                I am a hardworking person with a great passion for coding. I
-                love to learn new technologies. I am a fourth-year student in
-                the major of Computer Science and Innovation from Mae Fah Luang
-                University. I am looking for an position in a full-stack
-                developer position or back-end developer. I wish to apply my
-                experience and knowledge to make any organization that I am
-                going to work with grows bigger and stronger.
+                I am a hard-working person with a great passion for coding. I
+                love to learn about new technologies. I am a fourth-year student
+                in the major of Computer Science and Innovation at Mae Fah Luang
+                University and will graduate in 2022. I am looking for a
+                position as a full-stack developer or backend developer. I wish
+                to apply my experience and knowledge to make the organization
+                that I work with grow bigger and stronger.
                 <div className="col-1"></div>
               </div>
             </div>

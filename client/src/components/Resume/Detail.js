@@ -5,7 +5,10 @@ export default function Detail(props) {
     {
       projectName: "Accenture Internship Trainee",
       duration: "present",
-      tasks: [],
+      tasks: [
+        "Tested a web application",
+        "POC sending an email with Gmail, Hotmail, SendGrid and AWS SES hosting in Golang programing language",
+      ],
       role: "Back-end Developer",
       platform: "web application",
     },
@@ -61,17 +64,37 @@ export default function Detail(props) {
   ];
 
   var skills = [
-    "JavaScript",
-    "Dart",
-    "Java",
-    "Python",
-    "Flutter",
-    "VueJS",
-    "NodeJS",
-    "MySQL",
-    "HTML",
-    "CSS",
-    "Bootstrap",
+    {
+      title: "Web and Mobile",
+      ability: [
+        "Flutter",
+        "NodeJS",
+        "MySQL",
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "VueJS",
+        "ReactJS",
+      ],
+    },
+    {
+      title: "Programming Language",
+      ability: ["JavaScript", "Dart", "Java", "Python", "Golang"],
+    },
+    {
+      title: "Tools",
+      ability: [
+        "Figma",
+        "Adobe PhotoShop",
+        "Adobe Xd",
+        "Microsoft Office",
+        "Git",
+        "Xampp",
+        "Jupyter Notebook",
+        "Source Tree",
+        "Workbench",
+      ],
+    },
   ];
 
   return (
@@ -125,17 +148,26 @@ export default function Detail(props) {
       {props.active === "skills" && (
         <div id="skills">
           <h4>Programming Skills</h4>
-          <ul>
+          <div className="row mt-3">
             {skills.map((skill, index) => (
-              <li
-                key={`skill${index}`}
-                className="text-primary"
-                style={{ fontSize: "18px" }}
-              >
-                {skill}
-              </li>
+              <div key={`skill${index}`} className="col-4">
+                <strong style={{ fontSize: "clamp(1rem, 1vw, 5rem)" }}>
+                  {skill.title}
+                </strong>
+                <ul className="mt-1">
+                  {skill.ability.map((el, index) => (
+                    <li
+                      key={`ability${index}`}
+                      className="text-primary"
+                      style={{ fontSize: "clamp(1rem, 0.5vw, 5rem)" }}
+                    >
+                      {el}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
       )}
 
